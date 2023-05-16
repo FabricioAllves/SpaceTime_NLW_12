@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+//"@id" -> chave primary
+//@default(uuid())   -> uuui()   id unico para cada user
+
+//definir as tabelas do banco
+model User {
+  id   String @id @default(uuid())
+  name String
+}
+
+//Ate entao nao foi criado a tabela no banco para isso devemos correr
+//npx prisma migrate dev
+//oque faz?: ele le o arquivo (schema.prisma) e vai detectar todas as auteraçoes feita nesse arquivo
+//desde a ultima vez que foi executado esse comando
+
+// 2º definir o nome da migration (nome daqulea versao  assim como no git) -EX. historico-commit
+//apos isso ele cria a pasta (MIGRATIONS) QUE SERVE COMO HISTORICO DE CADA COMMIT
+
+// 3° ta mas como eu sei que o banco foi criado?: R= rodar o comando (NPX PRISMA STUDIO)
+// Que seria a interface do banco para visualizarmos
+
+// acessar o banco de dados de dentro do nosso servidor(API):npm i @prisma/client
+// 4° no server.ts import o "import { PrismaClient } from '@prisma/client'""
+
