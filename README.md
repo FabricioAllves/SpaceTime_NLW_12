@@ -27,42 +27,6 @@ acontecimentos marcantes da sua vida, organizados por mês e ano.
 - [ ] ...
 
 
-## ⚙️ Executando o projeto
-Pré requisitos para rodar o projeto:
-- Node.js (LTS) instalado na maquina
-- Gerenciador de pacote NPM ou YARN
-
-
-
-```bash
-# Clone o repositório
-$ git clone https://github.com/FabricioAllves/SpaceTime_NLW_12.git
-
-# Entre no repositório e inicie 
-$ Com a pasta aberta em "SpaceTime", seguir os passos a baixo para dar inicio a aplicação entrando em cada modulo(server/web/mobile)
-e code os comando abaixo:
-
-
-# Com YARN
-# Instale as dependências
-$ yarn install
-
-# Execute a aplicação
-$ yarn start
-$ yarn run dev
-
-# --------------------------------------------------------------------------------------------------
-
-# Com NPM
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação
-$ npm start
-$ npm api
-```
-
-
 <br />
 
 <div align="center">
