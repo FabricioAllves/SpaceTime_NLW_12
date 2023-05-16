@@ -11,7 +11,8 @@
 
 ## 💻 Projeto
 <!-- OQUE E´? -->
-Aplicacão Web e Mobile ministrada pela Rocketseat onde e criado uma "Capsula do tempo" semelhantea um blog.
+Aplicação de recordação de memórias, onde o usuário poderá adicionar à uma timeline textos, fotos e vídeos de 
+acontecimentos marcantes da sua vida, organizados por mês e ano.
 
 <!-- QUAIS TECNOLOGIA USEI? -->
 ## ✨ Tecnologias e bibliotecas utilizadas
