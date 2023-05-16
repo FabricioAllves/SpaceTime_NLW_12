@@ -30,5 +30,5 @@ acontecimentos marcantes da sua vida, organizados por mês e ano.
 <br />
 
 <div align="center">
-  <small>Desenvolvido por Fabricio Henrique durante NextLevelWeek- Rocketseat/small>
+  <small>Desenvolvido por Fabricio Henrique durante NextLevelWeek- Rocketseat </small>
 </div>
