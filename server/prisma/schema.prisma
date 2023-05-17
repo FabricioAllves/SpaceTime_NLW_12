@@ -15,8 +15,26 @@ datasource db {
 
 //definir as tabelas do banco
 model User {
-  id   String @id @default(uuid())
-  name String
+  id        String   @id @default(uuid())
+  githubId  Int      @unique //id unico
+  name      String
+  login     String
+  avatarUrl String
+
+  Memories    Memory[]
+}
+
+model Memory {
+  id        String   @id @default(uuid())
+  userId String
+
+  coverUrl  String
+  content   String
+  isPublic  Boolean  @default(false)
+  createdAt DateTime @default(now()) // data do dia
+
+  //relacionando tabelas   -> user pode ter varias memory (user User -> depois salvei para criar o relacionamento) 
+  user   User   @relation(fields: [userId], references: [id])
 }
 
 //Ate entao nao foi criado a tabela no banco para isso devemos correr
@@ -32,4 +50,3 @@ model User {
 
 // acessar o banco de dados de dentro do nosso servidor(API):npm i @prisma/client
 // 4° no server.ts import o "import { PrismaClient } from '@prisma/client'""
-
