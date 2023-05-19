@@ -21,7 +21,7 @@ export async function authRoutes(app: FastifyInstance) {
           code,
         },
         headers: {
-          Accept: 'appliication/json',
+          Accept: 'application/json',
         },
       },
     )
